@@ -11,10 +11,36 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Roboto", sans-serif;
-  background-color: black;
 }
 
 .navbar-logo {
   color: black;
   font-family: "Pacifico", cursive;
+}
+
+header {
+  height: 60vh;
+  background: rgba(0, 0, 0, 1);
+  background-image: linear-gradient(
+      317deg,
+      rgba(66, 66, 66, 0.4) 0%,
+      rgba(3, 3, 3, 0.6) 100%
+    ),
+    url(../images/landscape.jpg);
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#home h1 {
+  font-family: "Pacifico", cursive;
+}
+
+#home p {
+  font-size: 1.8rem;
+}
+#home a {
+  font-size: 1.6rem;
+  background-color: rgba(255, 255, 255, 0.2);
 }
