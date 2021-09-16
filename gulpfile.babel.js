@@ -1,5 +1,6 @@
 const { series, parallel, src, dest, watch } = require("gulp");
 const sass = require("gulp-sass")(require("sass"));
+const babel = require("gulp-babel");
 sass.compiler = require("node-sass");
 const cssnano = require("gulp-cssnano");
 const autoprefixer = require("gulp-autoprefixer");
@@ -26,6 +27,7 @@ const paths = {
 function javaScript(cb) {
   src(paths.js)
     .pipe(sourcemaps.init())
+    .pipe(babel({ presets: ["@babel/env"] }))
     .pipe(uglify())
     .pipe(
       rename({
@@ -64,9 +66,8 @@ function handleKits(done) {
 }
 
 function cleanStuff(done) {
-  src(paths.dist, { read: false })
-      .pipe(clean());
-  done()
+  src(paths.dist, { read: false }).pipe(clean());
+  done();
 }
 
 function startBrowserSync(done) {
