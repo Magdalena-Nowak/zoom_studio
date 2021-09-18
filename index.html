@@ -100,8 +100,8 @@
                 <div class="accordion container text-left col-md-8" id="accordionExample">
                     <div class="card">
                         <div class="card-header py-3" id="headingOne">
-                            <h2>
-                                <button class="btn btn-link" type="button" data-toggle="collapse"
+                            <h2 class="card__title">
+                                <button class="card__btn btn btn-link" type="button" data-toggle="collapse"
                                     data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                     Najlepsza jakość produktów
                                 </button>
@@ -120,8 +120,8 @@
                     </div>
                     <div class="card">
                         <div class="card-header py-3" id="headingTwo">
-                            <h2>
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            <h2 class="card__title">
+                                <button class="card__btn btn btn-link collapsed" type="button" data-toggle="collapse"
                                     data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                     Świetne relacje z klientami
                                 </button>
@@ -140,8 +140,8 @@
                     </div>
                     <div class="card">
                         <div class="card-header py-3" id="headingThree">
-                            <h2>
-                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                            <div class="card__title">
+                                <button class="card__btn btn btn-link collapsed" type="button" data-toggle="collapse"
                                     data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                     Zdobywcy wielu nagród
                                 </button>
@@ -161,16 +161,16 @@
                 </div>
             </div>
         </section>
-        <section id="team" class=" ">
+        <section id="team" class="team">
             <div class="container text-center">
                 <div class="my-5">
-                    <h2 class="section__title display-3">Zespół</h2>
+                    <h2 class="section__title display-4 py-5">Zespół</h2>
                     <hr class="section__line">
                     <p class="team__hero">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem pariatur
                         error
                         vel architecto saepe velit ut esse minima.</p>
                 </div>
-                <div class="row my-5">
+                <div class="row py-5">
                     <div class="card__wrapper col-12 col-sm-6 col-lg-4 mb-5">
                         <div class="card">
                             <img src="../dist/images/CEO.jpg" class="card-img-top" alt="CEO">
@@ -272,58 +272,56 @@
                 </div>
             </div>
         </section>
-        <section id="contact" class="contact bg-dark text-light text-center  ">
-            <div
-                class="container d-flex flex-column flex-md-row flex-md-wrap justify-content-center align-items-center">
-                <h2 class="text-light w-100">Napisz do nas!</h2>
-                <div class="row col-md-6">
+        <section id="contact" class="contact bg-dark text-light">
+            <div class="container">
+                <h2 class="section__title text-center">Napisz do nas!</h2>
+                <hr class="section__line">
+                <div class="row">
                     <address>
                         <p class="contact__business">ZOOM Studio</p>
                         <p>ul. Prosta 21</p>
                         <p>01-675 Warszawa</p>
-                        <hr class="bg-light">
                         <a href="tel:5554280940"><i class="fas fa-phone-square-alt"></i> 555-428-0940</a><br>
                         <a href="email:zoomstudio@gmail.com"><i class="far fa-envelope"></i> zoomstudio@gmail.com</a>
                     </address>
                 </div>
-                <div class="row col-12 col-md-6 d-flex justify-content-center align-items-center">
-                    <form class="w-100">
-                        <div class="form-row align-items-center justify-content-center">
-                            <div class="col-auto my-3">
-                                <div class="input-group mb-2 col-12">
+                <div class="row">
+                    <form>
+                        <div class="form-row">
+                            <div class="col-auto">
+                                <div class="input-group">
                                     <label class="sr-only" for="name">Imię i nazwisko</label>
                                     <div class="input-group-prepend">
                                         <div class="input-group-text"><i class="fas fa-user-alt"></i></div>
                                     </div>
-                                    <input type="text" class="form-control py-4" id="name"
+                                    <input type="text" class="form-control" id="name"
                                         placeholder="Imię i nazwisko">
                                 </div>
-                                <div>
-                                    <div class="col-auto my-3">
-
-                                        <div class="input-group mb-2 col-12">
-                                            <label class="sr-only" for="email">Email</label>
-                                            <div class="input-group-prepend">
-                                                <div class="input-group-text"><i class="fas fa-at"></i></div>
-                                            </div>
-                                            <input type="email" class="form-control py-4" id="email"
+                            </div>
+                            <div class="col-auto">
+                                <div class="input-group">
+                                    <label class="sr-only" for="email">Email</label>
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text"><i class="fas fa-at"></i></div>
+                                    </div>
+                                    <input type="email" class="form-control" id="email"
                                                 placeholder="Email">
-                                        </div>
-                                        <div class="col-auto my-3">
-                                            <div class="input-group col-12">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text"><i
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i
                                                             class="fas fa-envelope"></i></span>
-                                                </div>
-                                                <textarea class="form-control" aria-label="With textarea" rows="6"
-                                                    cols="33"></textarea>
-                                            </div>
-                                        </div>
+                                        <textarea class="form-control" aria-label="With textarea" rows="5" cols="30"></textarea>
                                     </div>
-                                    <div class="col-auto my-3">
-                                        <button type="submit"
-                                            class="contact__submit btn btn-light px-4 py-3 my-3 text-light">Submit</button>
-                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <button type="submit"
+                                            class="contact__submit btn btn-light my-3 py-3 px-4">Submit</button>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>
