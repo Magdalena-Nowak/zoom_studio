@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +14,37 @@
 </head>
 
 <body class="bg-light" data-spy="scroll" data-target="#navbar-example">
-    <!-- @import "nav.kit"-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-4 position-fixed w-100" id="navbar-example">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="../dist/images/zoom_studio_logo.svg" width="60" height="60" class="d-inline-block" alt="">
+                <span class="navbar-logo text-dark">ZOOM Studio</span>
+            </a>
+            <button class="navbar-toggler border-0 p-3" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" id="navbar-example">
+                <ul class="navbar-nav mr-auto mr-md-0 ml-md-auto">
+                    <li class="nav-item my-2 px-2">
+                        <a class="nav-link" href="#home">HOME</a>
+                    </li>
+                    <li class="nav-item my-2 px-2">
+                        <a class="nav-link" href="#about">O NAS</a>
+                    </li>
+                    <li class="nav-item my-2 px-2">
+                        <a class="nav-link" href="#team">
+                            ZESPÓŁ
+                        </a>
+                    </li>
+                    <li class="nav-item my-2 px-2">
+                        <a class="nav-link" href="#contact">KONTAKT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <header id="home" class="container-fluid py-4  ">
         <div class="h-100 d-flex flex-column text-light justify-content-center align-items-center text-center">
             <h1 class="display-2 my-3">ZOOM Studio</h1>
@@ -298,7 +327,11 @@
             </div>
         </section>
     </main>
-    <!-- @import "footer.kit"-->
+    <footer class="py-4 bg-dark text-light border-top">
+        <div class="container d-flex justify-content-center align-items-center">
+            <p>&copy; 2021 Copyright</p>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
