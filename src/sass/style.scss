@@ -46,6 +46,7 @@ header {
 
 .about {
   min-height: 100vh;
+  padding: 4rem 0;
   &__title {
     font-size: 2.4rem;
     text-transform: uppercase;
@@ -77,14 +78,25 @@ header {
 }
 
 #team {
-  min-height: 100vh;
+  background-color: #F0F0F0;
+  padding: 2rem 0;
+  
 }
 
 #team img {
+  height: 300px;
   object-fit: cover;
   object-position: center;
 }
 
+.team__hero {
+  padding: 3rem 0;
+}
+
 h5 {
   font-weight: 700;
+}
+
+.collapse__wrapper{
+  padding: 2rem 0;
 }
