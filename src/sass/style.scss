@@ -23,6 +23,10 @@ body {
   background-color: #c0660c;
 }
 
+nav {
+  z-index: 5;
+}
+
 .navbar-logo {
   font-family: "Pacifico", cursive;
   font-size: 2rem;
@@ -81,55 +85,45 @@ body {
   }
 }
 
-#team {
+.team {
   background-color: #f0f0f0;
-//   padding: 2rem 0;
-}
-
-#team img {
+&__img {
   height: 400px;
   object-fit: cover;
   object-position: center;
 }
+}
 
-// .team__hero {
-//   padding: 3rem 0;
-// }
+.team h5 {
+  font-weight: 700;
+}
 
-// h5 {
-//   font-weight: 700;
-// }
+.contact {
+  &__business {
+    font-family: "Pacifico", cursive;
+  }
+  &__submit {
+    font-size: 1.8rem;
+    // font-weight: bolder;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  &__title-wrapper {
+    flex: 1 1 100%;
+  }
+}
 
-// .collapse__wrapper {
-//   padding: 2rem 0;
-// }
+.form-control {
+  font-size: 1.6rem;
+}
 
-// .contact h2 {
-//   font-size: 3rem;
-//   padding: 4rem 0 2rem 0;
-// }
-
-// .contact__business {
-//   font-family: "Pacifico", cursive;
-// }
-
-// .contact__submit {
-//   background-color: rgba(255, 255, 255, 0.2);
-//   font-size: 1.6rem;
-// }
-
-// .contact button:hover {
-//   color: rgba(66, 66, 66, 0.4);
-// }
-
-// .contact a {
-//   color: white;
-// }
-
-// .contact address {
-//   padding: 0 0 3rem 0;
-// }
-
-nav {
-  z-index: 5;
+@media screen and (min-width: 768px) {
+  .contact {
+    align-items: stretch;
+    &__address-wrapper {
+      flex: 1 1 40%;
+    }
+    &__form-wrapper {
+      flex: 1 1 60%;
+    }
+  }
 }

@@ -164,16 +164,16 @@
         <section id="team" class="team">
             <div class="container text-center">
                 <div class="my-5">
-                    <h2 class="section__title display-4 py-5">Zespół</h2>
+                    <h2 class="section__title display-4 pt-5">Zespół</h2>
                     <hr class="section__line">
-                    <p class="team__hero">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem pariatur
+                    <p class="team__hero py-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem pariatur
                         error
                         vel architecto saepe velit ut esse minima.</p>
                 </div>
                 <div class="row py-5">
                     <div class="card__wrapper col-12 col-sm-6 col-lg-4 mb-5">
                         <div class="card">
-                            <img src="../dist/images/CEO.jpg" class="card-img-top" alt="CEO">
+                            <img src="../dist/images/CEO.jpg" class="team__img card-img-top" alt="CEO">
                             <div class="card-body">
                                 <h5 class="card-title">CEO</h5>
                                 <p class="card-text">This is a longer card with supporting text below as a natural
@@ -189,7 +189,7 @@
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4 mb-5">
                         <div class="card">
-                            <img src="../dist/images/dyrektor_artystyczny.jpg" class="card-img-top"
+                            <img src="../dist/images/dyrektor_artystyczny.jpg" class="team__img card-img-top"
                                 alt="dyrektor artystyczny">
                             <div class="card-body">
                                 <h5 class="card-title">Dyrektor artystyczny</h5>
@@ -205,7 +205,7 @@
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4 mb-5">
                         <div class="card">
-                            <img src="../dist/images/fotoedytor.jpg" class="card-img-top" alt="fotoedytor">
+                            <img src="../dist/images/fotoedytor.jpg" class="team__img card-img-top" alt="fotoedytor">
                             <div class="card-body">
                                 <h5 class="card-title">Fotoedytor</h5>
                                 <p class="card-text">This is a wider card with supporting text below as a natural
@@ -222,7 +222,7 @@
 
                     <div class="col-12 col-sm-6 col-lg-4 mb-5">
                         <div class="card">
-                            <img src="../dist/images/fotograf.jpg" class="card-img-top" alt="fotograf">
+                            <img src="../dist/images/fotograf.jpg" class="team__img card-img-top" alt="fotograf">
                             <div class="card-body">
                                 <h5 class="card-title">Fotograf</h5>
                                 <p class="card-text">This is a wider card with supporting text below as a natural
@@ -238,7 +238,7 @@
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4 mb-5">
                         <div class="card">
-                            <img src="../dist/images/grafik.jpg" class="card-img-top" alt="grafik">
+                            <img src="../dist/images/grafik.jpg" class="team__img card-img-top" alt="grafik">
                             <div class="card-body">
                                 <h5 class="card-title">Grafik</h5>
                                 <p class="card-text">This is a wider card with supporting text below as a natural
@@ -254,13 +254,11 @@
                     </div>
                     <div class="col-12 col-sm-6 col-lg-4 mb-5">
                         <div class="card">
-                            <img src="../dist/images/koordynator_projektu.jpg" class="card-img-top"
+                            <img src="../dist/images/koordynator_projektu.jpg" class="team__img card-img-top"
                                 alt="koordynator projeku">
                             <div class="card-body">
                                 <h5 class="card-title">Koordynator projektu</h5>
-                                <p class="card-text">This is a wider card with supporting text below as a natural
-                                    lead-in to
-                                    additional content.</p>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
                             </div>
                             <div class="card-footer d-flex justify-content-around align-items-center py-3">
                                 <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -273,42 +271,42 @@
             </div>
         </section>
         <section id="contact" class="contact bg-dark text-light">
-            <div class="container">
-                <h2 class="section__title text-center">Napisz do nas!</h2>
-                <hr class="section__line">
-                <div class="row">
+            <div class="container py-5 d-flex flex-column flex-md-row flex-wrap justify-content-center align-items-center col-md-8">
+                    <h2 class="section__title text-center display-4 w-100">Napisz do nas!</h2>
+                    <hr class="section__line mb-5 w-100">
+                <div class="contact__address-wrapper row d-flex justify-content-center align-items-stretch py-4">
                     <address>
                         <p class="contact__business">ZOOM Studio</p>
                         <p>ul. Prosta 21</p>
                         <p>01-675 Warszawa</p>
-                        <a href="tel:5554280940"><i class="fas fa-phone-square-alt"></i> 555-428-0940</a><br>
-                        <a href="email:zoomstudio@gmail.com"><i class="far fa-envelope"></i> zoomstudio@gmail.com</a>
+                        <a class="text-light" href="tel:5554280940"><i class="fas fa-phone-square-alt"></i> 555-428-0940</a><br>
+                        <a class="text-light" href="email:zoomstudio@gmail.com"><i class="far fa-envelope"></i> zoomstudio@gmail.com</a>
                     </address>
                 </div>
-                <div class="row">
+                <div class="contact__form-wrapper row d-flex justify-content-center py-4">
                     <form>
-                        <div class="form-row">
-                            <div class="col-auto">
+                        <div class="form-row d-flex flex-column">
+                            <div class="col-auto my-2">
                                 <div class="input-group">
                                     <label class="sr-only" for="name">Imię i nazwisko</label>
                                     <div class="input-group-prepend">
                                         <div class="input-group-text"><i class="fas fa-user-alt"></i></div>
                                     </div>
-                                    <input type="text" class="form-control" id="name"
+                                    <input type="text" class="form-control py-4 px-3" id="name"
                                         placeholder="Imię i nazwisko">
                                 </div>
                             </div>
-                            <div class="col-auto">
+                            <div class="col-auto my-2">
                                 <div class="input-group">
                                     <label class="sr-only" for="email">Email</label>
                                     <div class="input-group-prepend">
                                         <div class="input-group-text"><i class="fas fa-at"></i></div>
                                     </div>
-                                    <input type="email" class="form-control" id="email"
+                                    <input type="email" class="form-control py-4 px-3" id="email"
                                                 placeholder="Email">
                                 </div>
                             </div>
-                            <div class="col-auto">
+                            <div class="col-auto my-2">
                                 <div class="input-group">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i
@@ -317,9 +315,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-auto">
-                                <button type="submit"
-                                            class="contact__submit btn btn-light my-3 py-3 px-4">Submit</button>
+                            <div class="col-auto my-2 align-self-center">
+                                <button type="submit" class="contact__submit btn btn-light my-3 py-3 px-4">Submit</button>
                             </div>
                         </div>
                     </form>
