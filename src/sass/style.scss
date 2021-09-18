@@ -11,6 +11,7 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "Roboto", sans-serif;
+  position: relative;
 }
 
 .navbar-logo {
@@ -78,9 +79,8 @@ header {
 }
 
 #team {
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
   padding: 2rem 0;
-  
 }
 
 #team img {
@@ -97,7 +97,7 @@ h5 {
   font-weight: 700;
 }
 
-.collapse__wrapper{
+.collapse__wrapper {
   padding: 2rem 0;
 }
 
@@ -116,7 +116,7 @@ h5 {
 }
 
 .contact button:hover {
-  color:rgba(66, 66, 66, 0.4);
+  color: rgba(66, 66, 66, 0.4);
 }
 
 .contact a {
@@ -125,4 +125,8 @@ h5 {
 
 .contact address {
   padding: 0 0 3rem 0;
+}
+
+nav {
+  z-index: 5;
 }
