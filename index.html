@@ -14,301 +14,331 @@
     <title>ZOOM Studio</title>
 </head>
 
-<body class="bg-light">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light py-4">
-    <div class="container">
-        <a class="navbar-brand" href="#">
-            <img src="../dist/images/zoom_studio_logo.svg" width="60" height="60" class="d-inline-block" alt="">
-            <span class="navbar-logo text-dark">ZOOM Studio</span>
-        </a>
-        <button class="navbar-toggler border-0 p-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto mr-md-0 ml-md-auto">
-                <li class="nav-item active my-2 px-2">
-                    <a class="nav-link" href="#home">HOME <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item my-2 px-2">
-                    <a class="nav-link" href="#about">O NAS</a>
-                </li>
-                <li class="nav-item my-2 px-2">
-                    <a class="nav-link" href="#">
-                        ZESPÓŁ
-                    </a>
-                </li>
-                <li class="nav-item my-2 px-2">
-                    <a class="nav-link" href="#">KONTAKT</a>
-                </li>
-            </ul>
+<body class="bg-light" data-spy="scroll" data-target="#navbar-example">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-4 position-fixed w-100" id="navbar-example">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="../dist/images/zoom_studio_logo.svg" width="60" height="60" class="d-inline-block" alt="">
+                <span class="navbar-logo text-dark">ZOOM Studio</span>
+            </a>
+            <button class="navbar-toggler border-0 p-3" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" id="navbar-example">
+                <ul class="navbar-nav mr-auto mr-md-0 ml-md-auto">
+                    <li class="nav-item my-2 px-2">
+                        <a class="nav-link" href="#home">HOME</a>
+                    </li>
+                    <li class="nav-item my-2 px-2">
+                        <a class="nav-link" href="#about">O NAS</a>
+                    </li>
+                    <li class="nav-item my-2 px-2">
+                        <a class="nav-link" href="#team">
+                            ZESPÓŁ
+                        </a>
+                    </li>
+                    <li class="nav-item my-2 px-2">
+                        <a class="nav-link" href="#contact">KONTAKT</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
-    <header id="home" class="container-fluid py-4">
-        <div class="h-100 d-flex flex-column text-light justify-content-center align-items-center text-center">
-            <h1 class="display-2 my-3">ZOOM Studio</h1>
-            <p class="my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            <a href="#about" class="btn btn-light px-4 py-3 my-3 text-light">Poznaj nas</a>
+    </nav>
+    <header id="home" class="home container-fluid mb-3">
+        <div
+            class="home__wrapper h-100 d-flex flex-column text-light justify-content-center align-items-center text-center pt-5">
+            <h1 class="home__title display-3 py-3"></h1>
+            <p class="home__text py-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <a href="#about" class="home__button btn btn-light my-3 py-3 px-4">Poznaj nas</a>
         </div>
     </header>
     <main>
-        <section id="about" class="about">
-            <div class="container h-100 py-5">
-                <div class="row h-100 d-flex justify-content-center align-items-center">
-                <div class="card col-12 col-md-5 col-lg-2 bg-light border my-5 mx-md-auto">
-                    <div class="card-body d-flex flex-column justify-content-center align-items-center py-4">
-                        <h5 class="about__title card-title">Jakość</h5>
-                        <p class="py-2 about__icon"><i class="fas fa-check-double"></i></p>
-                        <p class="card-text pb-3">Some quick example text to build on the card title and make up.</p>
-                    </div>
-                </div>
-                <div class="card col-12 col-md-5 col-lg-2 bg-dark border text-light  my-5 mx-md-auto">
-                    <div class="card-body d-flex flex-column justify-content-center align-items-center py-4">
-                        <h5 class="about__title card-title">Klienci</h5>
-                        <p class="py-2 about__icon"><i class="fas fa-users"></i></p>
-                        <p class="card-text pb-3">Some quick example text to build on the card title and make up.</p>
-                    </div>
-                </div>
-                <div class="card col-12 col-md-5 col-lg-2 bg-light border my-5 mx-md-auto">
-                    <div class="card-body d-flex flex-column justify-content-center align-items-center py-4">
-                        <h5 class="about__title card-title">Sprzęt</h5>
-                        <p class="py-2 about__icon"><i class="fas fa-server"></i></p>
-                        <p class="card-text pb-3">Some quick example text to build on the card title and make up.</p>
-                    </div>
-                </div>
-                <div class="card col-12 col-md-5 col-lg-2 bg-dark border text-light  my-5 mx-md-auto">
-                    <div class="card-body d-flex flex-column justify-content-center align-items-center py-4">
-                        <h5 class="about__title card-title">Ceny</h5>
-                        <p class="py-2 about__icon"><i class="fas fa-euro-sign"></i></p>
-                        <p class="card-text pb-3">Some quick example text to build on the card title and make up.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="collapse__wrapper">
-            <div class="container my-5">
-                <h2 class="section__title text-center display-3">Czym się wyróżniamy?</h2>
-                <hr class="section__line">
-            </div>
-            <div class="accordion container py-5" id="accordionExample">
-                <div class="card">
-                    <div class="card-header" id="headingOne">
-                        <h2 class="mb-0 py-3">
-                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
-                                aria-expanded="true" aria-controls="collapseOne">
-                                Najlepsza jakość produktów
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                        data-parent="#accordionExample">
+        <section id="about" class="about text-center">
+            <div class="container h-100 py-2 py-md-4">
+                <h2 class="section__title display-4">O nas</h2>
+                <hr class="section__line mb-5">
+                <div class="row d-flex justify-content-center align-items-center" style="overflow: hidden;">
+                    <div class="about__card card col-11 col-md-5 my-3 m-md-5">
                         <div class="card-body py-4">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                            squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
-                            nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-                            single-origin coffee nulla assumenda shoreditch et.
+                            <h5 class="about__title card-title py-2">Jakość</h5>
+                            <p class="about__icon py-2"><i class="fas fa-check-double"></i></p>
+                            <p class="card-text py-2">Some quick example text to build on the card title and make up.
+                            </p>
                         </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingTwo">
-                        <h2 class="mb-0 py-3">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Świetne relacje z klientami
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="about__card card bg-dark text-light col-11 col-md-5 my-3 m-md-5">
                         <div class="card-body py-4">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                            squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
-                            nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-                            single-origin coffee nulla assumenda shoreditch et.
+                            <h5 class="about__title card-title py-2">Klienci</h5>
+                            <p class="about__icon py-2"><i class="fas fa-users"></i></p>
+                            <p class="card-text py-2">Some quick example text to build on the card title and make up.
+                            </p>
                         </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingThree">
-                        <h2 class="mb-0 py-3">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                Zdobywcy wielu nagród
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                        data-parent="#accordionExample">
+                    <div class="about__card card col-11 col-md-5 my-3 m-md-5">
                         <div class="card-body py-4">
-                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                            squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa
-                            nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
-                            single-origin coffee nulla assumenda shoreditch et.
+                            <h5 class="about__title card-title py-2">Sprzęt</h5>
+                            <p class="about__icon py-2"><i class="fas fa-server"></i></p>
+                            <p class="card-text py-2">Some quick example text to build on the card title and make up.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about__card card bg-dark text-light col-11 col-md-5 my-3 m-md-5">
+                        <div class="card-body py-4">
+                            <h5 class="about__title card-title py-2">Ceny</h5>
+                            <p class="about__icon py-2"><i class="fas fa-euro-sign"></i></p>
+                            <p class="card-text py-2">Some quick example text to build on the card title and make up.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="team">
-        <div class="container text-center">
-            <div class="my-5">
-                <h2 class="section__title display-3">Zespół</h2>
-                <hr class="section__line">
-                <p class="team__hero">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem pariatur
-                    error
-                    vel architecto saepe velit ut esse minima.</p>
-            </div>
-            <div class="row my-5">
-                <div class="card__wrapper col-12 col-sm-6 col-lg-4 mb-5">
+            <div class="collapse__wrapper mb-5">
+                <div class="container my-5">
+                    <h2 class="section__title text-center display-4">Czym się wyróżniamy?</h2>
+                    <hr class="section__line">
+                </div>
+                <div class="accordion container text-left col-md-8" id="accordionExample">
                     <div class="card">
-                        <img src="../dist/images/CEO.jpg" class="card-img-top" alt="CEO">
-                        <div class="card-body">
-                            <h5 class="card-title">CEO</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural
-                                lead-in
-                                to additional content.</p>
+                        <div class="card-header py-3" id="headingOne">
+                            <h3 class="card__title">
+                                <button class="card__btn btn btn-link" type="button" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Najlepsza jakość produktów
+                                </button>
+                            </h3>
                         </div>
-                        <div class="card-footer d-flex justify-content-around align-items-center py-3">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <div id="collapseOne" class="collapse show  py-3" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+                                quinoa
+                                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                                single-origin coffee nulla assumenda shoreditch et.
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-4 mb-5">
                     <div class="card">
-                        <img src="../dist/images/dyrektor_artystyczny.jpg" class="card-img-top"
-                            alt="dyrektor artystyczny">
-                        <div class="card-body">
-                            <h5 class="card-title">Dyrektor artystyczny</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                        <div class="card-header py-3" id="headingTwo">
+                            <h3 class="card__title">
+                                <button class="card__btn btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Świetne relacje z klientami
+                                </button>
+                            </h3>
                         </div>
-                        <div class="card-footer d-flex justify-content-around align-items-center py-3">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <div id="collapseTwo" class="collapse py-3" aria-labelledby="headingTwo"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
+                                squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+                                quinoa
+                                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid
+                                single-origin coffee nulla assumenda shoreditch et.
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-4 mb-5">
                     <div class="card">
-                        <img src="../dist/images/fotoedytor.jpg" class="card-img-top" alt="fotoedytor">
-                        <div class="card-body">
-                            <h5 class="card-title">Fotoedytor</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content.</p>
-                        </div>
-                        <div class="card-footer d-flex justify-content-around align-items-center py-3">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
+                        <div class="card-header py-3" id="headingThree">
+                            <h3 class="card__title">
+                                <button class="card__btn btn btn-link collapsed" type="button" data-toggle="collapse"
+                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Zdobywcy wielu nagród
+                                </button>
+                            </h3>
 
-                <div class="col-12 col-sm-6 col-lg-4 mb-5">
-                    <div class="card">
-                        <img src="../dist/images/fotograf.jpg" class="card-img-top" alt="fotograf">
-                        <div class="card-body">
-                            <h5 class="card-title">Fotograf</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content.</p>
-                        </div>
-                        <div class="card-footer d-flex justify-content-around align-items-center py-3">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-4 mb-5">
-                    <div class="card">
-                        <img src="../dist/images/grafik.jpg" class="card-img-top" alt="grafik">
-                        <div class="card-body">
-                            <h5 class="card-title">Grafik</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content.</p>
-                        </div>
-                        <div class="card-footer d-flex justify-content-around align-items-center py-3">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-sm-6 col-lg-4 mb-5">
-                    <div class="card">
-                        <img src="../dist/images/koordynator_projektu.jpg" class="card-img-top"
-                            alt="koordynator projeku">
-                        <div class="card-body">
-                            <h5 class="card-title">Koordynator projektu</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content.</p>
-                        </div>
-                        <div class="card-footer d-flex justify-content-around align-items-center py-3">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="contact" class="contact bg-dark text-light text-center">
-        <div class="container d-flex flex-column flex-md-row flex-md-wrap justify-content-center align-items-center">
-           <h2 class="text-light w-100">Kontakt</h2>
-           <div class="row col-md-6">
-               <address>
-                   <p class="contact__business">ZOOM Studio</p>
-                   <p>ul. Prosta 21</p>
-                   <p>01-675 Warszawa</p>
-                   <hr class="bg-light">
-                   <a href="tel:5554280940"><i class="fas fa-phone-square-alt"></i>   555-428-0940</a><br>
-                   <a href="email:zoomstudio@gmail.com"><i class="far fa-envelope"></i>  zoomstudio@gmail.com</a>
-                </address>
-            </div>
-            <div class="row col-12 col-md-6 d-flex justify-content-center align-items-center">
-                <form class="w-100">
-                    <div class="form-row align-items-center justify-content-center">
-                        <div class="col-auto my-3">
-                            <div class="input-group mb-2 col-12">
-                                <label class="sr-only" for="name">Imię i nazwisko</label>
-                              <div class="input-group-prepend">
-                                <div class="input-group-text"><i class="fas fa-user-alt"></i></div>
-                              </div>
-                              <input type="text" class="form-control py-4" id="name" placeholder="Imię i nazwisko">
-                            </div>
-                        <div>
-                        <div class="col-auto my-3">
-                            
-                            <div class="input-group mb-2 col-12">
-                                <label class="sr-only" for="email">Email</label>
-                                <div class="input-group-prepend">
-                                <div class="input-group-text"><i class="fas fa-at"></i></div>
+                            <div id="collapseThree" class="collapse py-3" aria-labelledby="headingThree"
+                                data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                    richardson ad
+                                    squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck
+                                    quinoa
+                                    nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it
+                                    squid
+                                    single-origin coffee nulla assumenda shoreditch et.
                                 </div>
-                                <input type="email" class="form-control py-4" id="email" placeholder="Email">
-                            </div>
-                        <div class="col-auto my-3">
-                            <div class="input-group col-12">
-                                <div class="input-group-prepend">
-                                  <span class="input-group-text"><i class="fas fa-envelope"></i></span>
-                                </div>
-                                <textarea class="form-control" aria-label="With textarea" rows="6" cols="33"></textarea>
                             </div>
                         </div>
                     </div>
-                    <div class="col-auto my-3">
-                       <button type="submit" class="contact__submit btn btn-light px-4 py-3 my-3 text-light">Submit</button>
+                </div>
+        </section>
+        <section id="team" class="team">
+            <div class="container text-center">
+                <div class="my-5">
+                    <h2 class="section__title display-4 pt-5">Zespół</h2>
+                    <hr class="section__line">
+                    <p class="team__hero py-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem pariatur
+                        error
+                        vel architecto saepe velit ut esse minima.</p>
+                </div>
+                <div class="row py-5">
+                    <div class="card__wrapper col-12 col-sm-6 col-lg-4 mb-5">
+                        <div class="card">
+                                <img src="../dist/images/CEO.jpg" class="team__img card-img-top" alt="CEO">
+                            <div class="card-body">
+                                <h5 class="card-title">CEO</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural
+                                    lead-in
+                                    to additional content.</p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-around align-items-center py-3">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
                     </div>
-                </form>
-            </div>
-        </div>
-    </section>
-</main>
+                    <div class="col-12 col-sm-6 col-lg-4 mb-5">
+                        <div class="card">
+                            <img src="../dist/images/dyrektor_artystyczny.jpg" class="team__img card-img-top"
+                                alt="dyrektor artystyczny">
+                            <div class="card-body">
+                                <h5 class="card-title">Dyrektor artystyczny</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content.</p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-around align-items-center py-3">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 mb-5">
+                        <div class="card">
+                            <img src="../dist/images/fotoedytor.jpg" class="team__img card-img-top" alt="fotoedytor">
+                            <div class="card-body">
+                                <h5 class="card-title">Fotoedytor</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to
+                                    additional content.</p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-around align-items-center py-3">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="col-12 col-sm-6 col-lg-4 mb-5">
+                        <div class="card">
+                            <img src="../dist/images/fotograf.jpg" class="team__img card-img-top" alt="fotograf">
+                            <div class="card-body">
+                                <h5 class="card-title">Fotograf</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to
+                                    additional content.</p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-around align-items-center py-3">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 mb-5">
+                        <div class="card">
+                            <img src="../dist/images/grafik.jpg" class="team__img card-img-top" alt="grafik">
+                            <div class="card-body">
+                                <h5 class="card-title">Grafik</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to
+                                    additional content.</p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-around align-items-center py-3">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-lg-4 mb-5">
+                        <div class="card">
+                            <img src="../dist/images/koordynator_projektu.jpg" class="team__img card-img-top"
+                                alt="koordynator projeku">
+                            <div class="card-body">
+                                <h5 class="card-title">Koordynator projektu</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural
+                                    lead-in to additional content.</p>
+                            </div>
+                            <div class="card-footer d-flex justify-content-around align-items-center py-3">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact bg-dark text-light">
+            <div class="container py-5">
+                <h2 class="section__title text-center display-4 w-100">Napisz do nas!</h2>
+                <hr class="section__line mb-5 w-100">
+            </div>
+            <div
+                class="container py-5 d-flex flex-column flex-md-row flex-wrap justify-content-center align-items-center col-md-8">
+                <div class="contact__address-wrapper row d-flex justify-content-center align-items-stretch py-4">
+                    <address>
+                        <p class="contact__business">ZOOM Studio</p>
+                        <p>ul. Prosta 21</p>
+                        <p>01-675 Warszawa</p>
+                        <a class="text-light" href="tel:5554280940"><i class="fas fa-phone-square-alt"></i>
+                            555-428-0940</a><br>
+                        <a class="text-light" href="email:zoomstudio@gmail.com"><i class="far fa-envelope"></i>
+                            zoomstudio@gmail.com</a>
+                    </address>
+                </div>
+                <div class="contact__form-wrapper row d-flex justify-content-center py-4">
+                    <form>
+                        <div class="form-row d-flex flex-column">
+                            <div class="col-auto my-2">
+                                <div class="input-group">
+                                    <label class="sr-only" for="name">Imię i nazwisko</label>
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text"><i class="fas fa-user-alt"></i></div>
+                                    </div>
+                                    <input type="text" class="form-control py-4 px-3" id="name"
+                                        placeholder="Imię i nazwisko">
+                                </div>
+                            </div>
+                            <div class="col-auto my-2">
+                                <div class="input-group">
+                                    <label class="sr-only" for="email">Email</label>
+                                    <div class="input-group-prepend">
+                                        <div class="input-group-text"><i class="fas fa-at"></i></div>
+                                    </div>
+                                    <input type="email" class="form-control py-4 px-3" id="email" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="col-auto my-2">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                        <textarea class="form-control" aria-label="With textarea" rows="5"
+                                            cols="30"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-auto my-2 align-self-center">
+                                <button type="submit"
+                                    class="contact__submit btn btn-light my-3 py-2 px-5">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="py-4 bg-dark text-light">
+        <div class="container">
+            <p class="col-12 text-center py-4">&copy; 2021 Copyright</p>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -319,6 +349,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+
+    <script src="../dist/js/app.min.js"></script>
 </body>
 
 </html>
