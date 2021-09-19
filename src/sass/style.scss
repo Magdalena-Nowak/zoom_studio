@@ -74,7 +74,7 @@ nav {
 }
 
 .card {
-overflow: hidden;
+  overflow: hidden;
   &__btn {
     font-size: 1.8rem;
     color: rgb(29, 29, 29);
@@ -140,4 +140,19 @@ footer .container {
       flex: 1 1 60%;
     }
   }
+}
+
+.form__info {
+  display: none;
+}
+
+.error {
+  display: flex;
+}
+.text-warning {
+  color: #c0660c !important;
+}
+
+.active {
+  display: block;
 }
