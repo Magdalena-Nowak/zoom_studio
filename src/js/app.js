@@ -4,7 +4,7 @@ const titleText = "ZOOM Studio";
 const titleDiv = document.querySelector(".home__title");
 const time = 100;
 const images = document.querySelectorAll(".team img");
-const indexTyping = setInterval(addLetter, time);
+
 let writing = "";
 let indexText = 0;
 
@@ -21,6 +21,8 @@ const addLetter = () => {
   indexText++;
   if (indexText === titleText.length) clearInterval(indexTyping);
 };
+
+const indexTyping = setInterval(addLetter, time);
 
 let tl = gsap.timeline({
   scrollTrigger: {
@@ -76,27 +78,21 @@ newTl
   .from(".team h2", { yPercent: 100, opacity: 0, delay: 1 })
   .addLabel("end");
 
-  images.forEach(image => {
-    ScrollTrigger.create({
-        trigger: image,
-        start: "top center",
-        end: "bottom top",
-        animation: gsap.from(image, {
-            skewY: "25deg",
-            opacity: 0,
-            stagger: 0.4,
-          })
-    })
+images.forEach((image) => {
+  ScrollTrigger.create({
+    trigger: image,
+    start: "top center",
+    end: "bottom top",
+    animation: gsap.from(image, {
+      skewY: "25deg",
+      opacity: 0,
+      stagger: 0.4,
+    }),
+  });
 });
 
 ScrollTrigger.create({
-    trigger: "#contact",
-    start: "top center",
-    animation: gsap.from(".contact h2", {yPercent: 100, opacity: 0})
-})
-
-
-
-
-
-
+  trigger: "#contact",
+  start: "top center",
+  animation: gsap.from(".contact h2", { yPercent: 100, opacity: 0 }),
+});
