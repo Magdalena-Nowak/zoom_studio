@@ -2,7 +2,7 @@
 
 The business card page build with Bootstrap, animation from gsap and contact form.
 
-Live demo: https://eloquent-joliot-6391ba.netlify.app
+Live demo: https://boring-galileo-3617c4.netlify.app/
 
 ## Table of content
 
@@ -27,8 +27,8 @@ The business card page build with Bootstrap, animation from gsap and contact for
 
 ## Screenshots
 ![image](https://user-images.githubusercontent.com/70846864/134024057-0cc9de81-11cf-4ae6-a6cc-332d35c6eef0.png)
-![image](https://user-images.githubusercontent.com/70846864/134024064-3d3d7f52-81b3-4db9-81bc-d52597785395.png)
+![image](https://user-images.githubusercontent.com/70846864/134026609-f43fb2c9-74ac-4d42-b64f-1dc063a55cb4.png)
 
 ## Setup
-Live demo: https://eloquent-joliot-6391ba.netlify.app
+Live demo: https://boring-galileo-3617c4.netlify.app/
 
