@@ -73,7 +73,7 @@ newTl
     yPercent: -300,
     xPercent: 200,
     stagger: 0.4,
-    duration: 1.5,
+    duration: 1,
   })
   .addLabel("header")
   .fromTo(
@@ -93,14 +93,14 @@ images.forEach((image) => {
     animation: gsap.from(image, {
       skewY: "25deg",
       opacity: 0,
-      stagger: 0.4,
+      stagger: 0.3,
     }),
   });
 });
 
 ScrollTrigger.create({
   trigger: "#contact",
-  start: "top center",
+  start: "top bottom",
   animation: gsap.from(".contact h2", { yPercent: 100, opacity: 0 }),
 });
 
@@ -115,14 +115,6 @@ const showErr = (input, message) => {
   input.classList.add("alert-warning");
   selectParent(input, message);
 };
-
-// const clearInput = (input) => {
-//   input.value = "";
-//   const inputParent = input.parentElement.parentElement;
-//   const errorTag = inputParent.querySelector(".form__info");
-//   errorTag.classList.remove("error");
-//   input.classList.remove("alert-warning");
-// };
 
 const checkEmail = (input) => {
   const emailRegex =
