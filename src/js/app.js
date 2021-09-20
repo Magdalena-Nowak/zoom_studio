@@ -7,7 +7,7 @@ const images = document.querySelectorAll(".team img");
 const userName = document.querySelector("#name");
 const userEmail = document.querySelector("#email");
 const submitBtn = document.querySelector(".contact__submit");
-const textArea = document.querySelector(".input-group textarea");
+const textArea = document.querySelector(".input-group-prepend textarea");
 const confirmPopup = document.querySelector(".popup");
 const confirmBtn = document.querySelector(".popup__btn");
 const min = 5;
@@ -104,31 +104,42 @@ ScrollTrigger.create({
   animation: gsap.from(".contact h2", { yPercent: 100, opacity: 0 }),
 });
 
-const showErr = (input, message) => {
-  input.classList.add("alert-warning");
-  input.nextElementSibling.classList.add("error");
-  input.nextElementSibling.textContent = message;
+const selectParent = (input, message) => {
+  const inputParent = input.parentElement.parentElement;
+  const errorTag = inputParent.querySelector(".form__info");
+  errorTag.classList.add("error");
+  errorTag.textContent = message;
 };
 
-const clearInput = (input) => {
-  input.value = "";
-  input.nextElementSibling.classList.remove("error");
-  input.classList.remove("alert-warning");
+const showErr = (input, message) => {
+  input.classList.add("alert-warning");
+  selectParent(input, message);
 };
+
+// const clearInput = (input) => {
+//   input.value = "";
+//   const inputParent = input.parentElement.parentElement;
+//   const errorTag = inputParent.querySelector(".form__info");
+//   errorTag.classList.remove("error");
+//   input.classList.remove("alert-warning");
+// };
 
 const checkEmail = (input) => {
   const emailRegex =
     /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   if (emailRegex.test(input.value)) {
-    input.nextElementSibling.classList.remove("error");
+    const inputParent = input.parentElement.parentElement;
+    const errorTag = inputParent.querySelector(".form__info");
+    errorTag.classList.remove("error");
+    input.classList.remove("alert-warning");
   } else {
     showErr(input, "E-mail jest niepoprawny");
   }
 };
 
-const checkForm = (input) => {
-  input.forEach((input) => {
-    if (input.value === "") {
+const checkForm = (inputs) => {
+  inputs.forEach((input) => {
+    if (input.value == "") {
       showErr(input, input.placeholder);
     }
   });
@@ -140,18 +151,43 @@ const checkLength = (input, min) => {
     errMessage = `${inputAttribute} musi składać się z min. ${min} znaków`;
     showErr(input, errMessage);
   } else {
-    input.nextElementSibling.classList.remove("error");
+    const inputParent = input.parentElement.parentElement;
+    const errorTag = inputParent.querySelector(".form__info");
+    errorTag.classList.remove("error");
+    input.classList.remove("alert-warning");
   }
+};
+
+const checkErrors = () => {
+  const allInputs = document.querySelectorAll(".form-control");
+  let errorCount = 0;
+  allInputs.forEach((input) => {
+    const inputParent = input.parentElement.parentElement;
+    const errorTag = inputParent.querySelector(".form__info");
+    if (errorTag.classList.contains("error")) {
+      errorCount++;
+    }
+  });
+  if (errorCount === 0) {
+    confirmPopup.classList.add("active");
+  }
+};
+
+const clearInput = () => {
+  const allInputs = document.querySelectorAll(".form-control");
+  allInputs.forEach((input) => (input.value = ""));
 };
 
 submitBtn.addEventListener("click", (e) => {
   e.preventDefault();
-  checkForm([userName, userEmail]);
+  checkForm([userName, userEmail, textArea]);
   checkLength(userName, min);
   checkLength(textArea, min);
   checkEmail(userEmail);
+  checkErrors();
 });
 
 confirmBtn.addEventListener("click", () => {
   confirmPopup.classList.remove("active");
+  clearInput();
 });

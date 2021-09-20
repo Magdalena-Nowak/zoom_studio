@@ -303,9 +303,9 @@
                                         <div class="input-group-text"><i class="fas fa-user-alt"></i></div>
                                     </div>
                                     <input type="text" class="form-control py-4 px-3" id="name"
-                                        placeholder="Imię i nazwisko">
-                                    <p class="form__info text-warning"></p>
+                                        placeholder="Imię i nazwisko" required>
                                 </div>
+                                <p class="form__info text-warning"></p>
                             </div>
                             <div class="col-auto my-2">
                                 <div class="input-group">
@@ -313,19 +313,19 @@
                                     <div class="input-group-prepend">
                                         <div class="input-group-text"><i class="fas fa-at"></i></div>
                                     </div>
-                                    <input type="email" class="form-control py-4 px-3" id="email" placeholder="Email">
-                                    <p class="form__info text-warning"></p>
+                                    <input type="email" class="form-control py-4 px-3" id="email" placeholder="Email" required>
                                 </div>
+                                <p class="form__info text-warning"></p>
                             </div>
                             <div class="col-auto my-2">
-                                <div class="input-group">
+                                <!-- <div class="input-group"> -->
                                     <div class="input-group-prepend">
                                         <span class="input-group-text"><i class="fas fa-envelope"></i></span>
-                                        <textarea class="form-control" aria-label="With textarea" rows="5"
-                                            cols="30" placeholder="Twoja wiadomość"></textarea>
-                                        <p class="form__info text-warning"></p>
+                                        <textarea class="form-control" aria-label="With textarea" rows="5" cols="30"
+                                            placeholder="Twoja wiadomość" required></textarea>
                                     </div>
-                                </div>
+                                <!-- </div> -->
+                                <p class="form__info text-warning"></p>
                             </div>
                             <div class="col-auto my-2 align-self-center">
                                 <button type="submit"
@@ -335,10 +335,10 @@
                     </form>
                 </div>
             </div>
-        </section>
-        <section class="popup row col-10 col-lg-6 p-5">
-            <h2 class="popup__header text-center">Formularz został poprawnie wysłany!</h2>
-            <button class="popup__btn btn bg-dark text-white col-6 offset-3 col-lg-4 offset-lg-4">Zamknij</button>
+            <section class="popup bg-light text-dark container py-5 d-flex flex-column justify-content-center align-items-center">
+                <h2 class="popup__header text-center py-5">Formularz został poprawnie wysłany!</h2>
+                <button class="popup__btn btn my-5 py-3 px-5 bg-dark text-white">Zamknij</button>
+            </section>
         </section>
     </main>
     <footer class="py-4 bg-dark text-light">

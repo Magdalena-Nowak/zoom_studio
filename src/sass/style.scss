@@ -110,6 +110,8 @@ nav {
 }
 
 .contact {
+  position: relative;
+  transition: all 1s ease-in-out;
   &__business {
     font-family: "Pacifico", cursive;
   }
@@ -149,10 +151,31 @@ footer .container {
 .error {
   display: flex;
 }
+
 .text-warning {
   color: #c0660c !important;
+}
+.alert-warning {
+  background-color: #ebc69f !important;
 }
 
 .active {
   display: block;
+}
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  pointer-events: none;
+  &__btn {
+    font-size: 1.6rem;
+  }
+}
+
+.popup.active {
+  opacity: 1;
+  pointer-events: all;
 }
